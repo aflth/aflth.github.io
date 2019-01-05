@@ -134,7 +134,7 @@
 <meta property="og:description" content="其实每个人都有自己的不如意，只是有的人站在阳光下哭花了脸，有的人却躲在暗地里开出了花   一、前提条件（ESC校准）系统必须包含电源管理模块（px4使用测量电压来确定电池是否连接）步骤1. 拆螺旋桨 2. 点开电池用USB（仅限）连接飞行控制器 3. 打开QGcroundcontrol setting &amp;gt; power &amp;gt; calibrate （校准） 4. 出现提示电池连接 5. 校">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://res.cloudinary.com/aflthblog/image/upload/v1546661437/webimage/ESClogo.png">
-<meta property="og:updated_time" content="2019-01-05T04:12:26.671Z">
+<meta property="og:updated_time" content="2019-01-05T04:20:05.830Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于无人机电调（ESC）问题">
 <meta name="twitter:description" content="其实每个人都有自己的不如意，只是有的人站在阳光下哭花了脸，有的人却躲在暗地里开出了花   一、前提条件（ESC校准）系统必须包含电源管理模块（px4使用测量电压来确定电池是否连接）步骤1. 拆螺旋桨 2. 点开电池用USB（仅限）连接飞行控制器 3. 打开QGcroundcontrol setting &amp;gt; power &amp;gt; calibrate （校准） 4. 出现提示电池连接 5. 校">
@@ -361,7 +361,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-05T12:12:26+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-05T12:20:05+08:00">
                 2019-01-05
               </time>
             
@@ -437,7 +437,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  461
+                  520
                 </span>
               
 
@@ -476,7 +476,7 @@
           
           
             <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox" href="https://res.cloudinary.com/aflthblog/image/upload/v1546661437/webimage/ESClogo.png" rel="gallery_cjqiycsag00160ld2jlyorpxu" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
+              <a class="post-gallery-img fancybox" href="https://res.cloudinary.com/aflthblog/image/upload/v1546661437/webimage/ESClogo.png" rel="gallery_cjqiymmz80015l3d2nz3t8loh" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="https://res.cloudinary.com/aflthblog/image/upload/v1546661437/webimage/ESClogo.png" itemprop="contentUrl">
               </a>
             
@@ -529,6 +529,14 @@
 </li>
 </ul>
 <p><img src="https://res.cloudinary.com/aflthblog/image/upload/v1546661462/webimage/dys-f20a-4-in-1-esc-700x700.jpg" alt="四合一电调"></p>
+<h1 id="ESC校准"><a href="#ESC校准" class="headerlink" title="ESC校准"></a>ESC校准</h1><h2 id="ESC校准的三种方法"><a href="#ESC校准的三种方法" class="headerlink" title="ESC校准的三种方法"></a>ESC校准的三种方法</h2><ul>
+<li>通过编程卡直接设置电调参数（未实践）<ul>
+<li>好盈无刷电调参数编程卡</li>
+</ul>
+</li>
+<li>通过USB连接计算机（文章开头简绍）</li>
+<li>通过遥控器（为实践）</li>
+</ul>
 
       
     </div>
@@ -717,7 +725,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、前提条件（ESC校准）"><span class="nav-number">1.</span> <span class="nav-text">一、前提条件（ESC校准）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#系统必须包含电源管理模块（px4使用测量电压来确定电池是否连接）"><span class="nav-number">1.1.</span> <span class="nav-text">系统必须包含电源管理模块（px4使用测量电压来确定电池是否连接）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#步骤"><span class="nav-number">2.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ESC固件简绍"><span class="nav-number">3.</span> <span class="nav-text">ESC固件简绍</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ESC固件是每个ESC（电子速度控制器）都运行的软件，他决定了ESC的性能"><span class="nav-number">3.1.</span> <span class="nav-text">ESC固件是每个ESC（电子速度控制器）都运行的软件，他决定了ESC的性能</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ESC协议"><span class="nav-number">4.</span> <span class="nav-text">ESC协议</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ESC协议是飞行控制器与ESC的通用语言，常见的有-PWM"><span class="nav-number">4.1.</span> <span class="nav-text">ESC协议是飞行控制器与ESC的通用语言，常见的有 PWM</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何选择电子速度控制器（ESC）"><span class="nav-number">5.</span> <span class="nav-text">如何选择电子速度控制器（ESC）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#选择额定电流"><span class="nav-number">5.1.</span> <span class="nav-text">选择额定电流</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、前提条件（ESC校准）"><span class="nav-number">1.</span> <span class="nav-text">一、前提条件（ESC校准）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#系统必须包含电源管理模块（px4使用测量电压来确定电池是否连接）"><span class="nav-number">1.1.</span> <span class="nav-text">系统必须包含电源管理模块（px4使用测量电压来确定电池是否连接）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#步骤"><span class="nav-number">2.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ESC固件简绍"><span class="nav-number">3.</span> <span class="nav-text">ESC固件简绍</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ESC固件是每个ESC（电子速度控制器）都运行的软件，他决定了ESC的性能"><span class="nav-number">3.1.</span> <span class="nav-text">ESC固件是每个ESC（电子速度控制器）都运行的软件，他决定了ESC的性能</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ESC协议"><span class="nav-number">4.</span> <span class="nav-text">ESC协议</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ESC协议是飞行控制器与ESC的通用语言，常见的有-PWM"><span class="nav-number">4.1.</span> <span class="nav-text">ESC协议是飞行控制器与ESC的通用语言，常见的有 PWM</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何选择电子速度控制器（ESC）"><span class="nav-number">5.</span> <span class="nav-text">如何选择电子速度控制器（ESC）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#选择额定电流"><span class="nav-number">5.1.</span> <span class="nav-text">选择额定电流</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ESC校准"><span class="nav-number">6.</span> <span class="nav-text">ESC校准</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ESC校准的三种方法"><span class="nav-number">6.1.</span> <span class="nav-text">ESC校准的三种方法</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -751,7 +759,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">6.1k</span>
+    <span title="Site words total count">6.2k</span>
   
 </div>
 
